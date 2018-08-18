@@ -1,0 +1,237 @@
+<!-- <div class="row">
+																	<div class="col-xl-6">
+		<m-material-preview [viewItem]="exampleStepperOverview"> -->
+		<div class="m-section">
+			<div class="m-section__content">
+				<mat-horizontal-stepper [linear]="isLinear" #stepper="matHorizontalStepper">
+				<mat-step [stepControl]="firstFormGroup">
+				<form [formGroup]="firstFormGroup">
+					<ng-template matStepLabel>Personal Information</ng-template>
+					<p>
+						<mat-form-field>
+						<input matInput placeholder="First name" formControlName="firstCtrl" required>
+						</mat-form-field>
+					</p>
+					<p>
+						<mat-form-field>
+						<input matInput placeholder="Last name" formControlName="lastCtrl" required>
+						</mat-form-field>
+					</p>
+					<p>
+						<mat-form-field>
+						<input matInput [matDatepicker]="dp3" placeholder="Date of Birth" disabled>
+						<mat-datepicker-toggle matSuffix [for]="dp3"></mat-datepicker-toggle>
+						<mat-datepicker #dp3 disabled="false"></mat-datepicker>
+						</mat-form-field>
+					</p>
+					<div>
+						<button mat-button matStepperNext>Next</button>
+					</div>
+				</form>
+				</mat-step>
+				<mat-step [stepControl]="secondFormGroup">
+				<form [formGroup]="secondFormGroup">
+					<ng-template matStepLabel>Address</ng-template>
+					<p>
+						<mat-form-field>
+						<input matInput placeholder="Street Address" formControlName="addressLine1Ctrl" required>
+						</mat-form-field>
+					</p>
+					<p>
+						<mat-form-field>
+						<input matInput placeholder="Address Line 2" formControlName="addressLine2Ctrl" required>
+						</mat-form-field>
+					</p>
+					<p>
+						<mat-form-field>
+						<input matInput placeholder="City">
+						</mat-form-field>
+					</p>
+					<p>
+						<mat-form-field>
+						<input matInput placeholder="State" aria-label="State" [matAutocomplete]="auto"
+						[formControl]="stateCtrl">
+						<mat-autocomplete #auto="matAutocomplete">
+						<mat-option *ngFor="let state of filteredStates | async" [value]="state.name">
+						<span>{{ state.name }}</span> |
+						<small>{{ state.abbreviation }}</small>
+						</mat-option>
+						</mat-autocomplete>
+						</mat-form-field>
+					</p>
+					<p>
+						<mat-form-field>
+						<input matInput #postalCode placeholder="Postal Code" value=""     oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+						type = "number"
+						maxlength = "5">
+						<mat-hint align="end">{{postalCode.value.length}} / 5</mat-hint>
+						</mat-form-field>
+					</p>
+					<p>
+						<mat-form-field>
+						<input matInput placeholder="Enter email" type="email">
+						</mat-form-field>
+					</p>
+					<p>
+						<mat-form-field>
+						<mat-icon matPrefix>local_phone</mat-icon>
+						<input type="tel" matInput placeholder="Phone number">
+						</mat-form-field>
+					</p>
+					<div>
+						<button mat-button matStepperPrevious>Back</button>
+						<button mat-button matStepperNext>Next</button>
+					</div>
+				</form>
+				</mat-step>
+				<mat-step [stepControl]="thirdFormGroup">
+				<form [formGroup]="thirdFormGroup">
+					<ng-template matStepLabel>Licensing Information</ng-template>
+					<p>
+						<mat-form-field class="example-form-field">
+						<input matInput type="text" placeholder="License Number" formControlName="licenseNumber" required/>
+						<button mat-button *ngIf="licenseNumber" matSuffix mat-icon-button aria-label="Clear" (click)="licenseNumber=''">
+						<mat-icon>close</mat-icon>
+						</button>
+						</mat-form-field>
+					</p>
+					<p>
+						<mat-form-field>
+						<input matInput [matDatepicker]="dp4" placeholder="License Valid thru" disabled>
+						<mat-datepicker-toggle matSuffix [for]="dp4"></mat-datepicker-toggle>
+						<mat-datepicker #dp4 disabled="false"></mat-datepicker>
+						</mat-form-field>
+					</p>
+					<div>
+						<label class="col-form-label">Immunization Priviledge</label>
+						<div class="col-lg-6">
+							<div class="m-radio-list">
+								<mat-radio-group>
+								<p>
+									<mat-radio-button value="1">Yes</mat-radio-button>
+									<mat-radio-button value="2">No</mat-radio-button>
+								</p>
+								</mat-radio-group>
+							</div>
+							<p>
+								<mat-form-field>
+								<input matInput [matDatepicker]="dp5" placeholder="IP Valid thru" disabled>
+								<mat-datepicker-toggle matSuffix [for]="dp5"></mat-datepicker-toggle>
+								<mat-datepicker #dp5 disabled="false"></mat-datepicker>
+								</mat-form-field>
+							</p>
+						</div>
+					</div>
+					<p>
+						<mat-form-field>
+						<input matInput #npi placeholder="NPI number" value="" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+						type = "number"
+						maxlength = "10">
+						<mat-hint align="end">{{npi.value.length}} / 10</mat-hint>
+						</mat-form-field>
+					</p>
+					<div>
+						<label class="col-form-label">MTM Certified</label>
+						<div class="col-lg-6">
+							<div class="m-radio-list">
+								<mat-radio-group>
+								<p>
+									<mat-radio-button value="1">Yes</mat-radio-button>
+									<mat-radio-button value="2">No</mat-radio-button>
+								</p>
+								</mat-radio-group>
+							</div>
+						</div>
+					</div>
+					<div>
+						<label class="col-form-label">CPR Certified</label>
+						<div class="col-lg-6">
+							<div class="m-radio-list">
+								<mat-radio-group>
+								<p>
+									<mat-radio-button value="1">Yes</mat-radio-button>
+									<mat-radio-button value="2">No</mat-radio-button>
+								</p>
+								</mat-radio-group>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4" align="left">
+						<p>
+							<mat-checkbox>Pharm D.</mat-checkbox>
+						</p>
+						<p>
+							<mat-checkbox>Pharmacy-Based Cardiovascular<br /> Disease Risk Manangement</mat-checkbox>
+						</p>
+						<p>
+							<mat-checkbox>Patient-Centered Diabetes Care</mat-checkbox>
+						</p>
+						<p>
+							<mat-checkbox>Patient-Based Travel Health Services</mat-checkbox>
+						</p>
+					</div>
+					<div>
+						<button mat-button matStepperPrevious>Back</button>
+						<button mat-button matStepperNext>Next</button>
+					</div>
+				</form>
+				</mat-step>
+				<mat-step [stepControl]="fourthFormGroup">
+				<form [formGroup]="fourthFormGroup">
+					<ng-template matStepLabel>Work Preference</ng-template>
+					<div>
+						<label>Area</label>
+						<p>
+							<mat-form-field>
+							<input matInput placeholder="City">
+							</mat-form-field>
+						</p>
+						<p>
+							<mat-form-field>
+							<input matInput #postalCodeWp placeholder="Postal Code" value=""     oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+							type = "number"
+							maxlength = "5">
+							<mat-hint align="end">{{postalCodeWp.value.length}} / 5</mat-hint>
+							</mat-form-field>
+						</p>
+					</div>
+					<br />
+					<br />
+					<div>
+						<label>Method of Transportation</label>
+						<div class="col-lg-4" align="left">
+							<p>
+								<mat-checkbox>Drive</mat-checkbox>
+							</p>
+							<p>
+								<mat-checkbox>Public Transport</mat-checkbox>
+							</p>
+						</div>
+					</div>
+					<div>
+						<button mat-button matStepperPrevious>Back</button>
+						<button mat-button matStepperNext>Next</button>
+					</div>
+				</form>
+				</mat-step>
+				<mat-step>
+				<ng-template matStepLabel>Done</ng-template>
+				Save your profile.
+				<div>
+					<div class="col-lg-4">
+						<mat-slide-toggle [(ngModel)]="isHuman" (change)="onChange($event)" name="human1">I am not a robot
+						</mat-slide-toggle>
+					</div>
+					<button mat-raised-button color="primary" disabled="{{!isHuman}}">Submit</button>&nbsp;
+					<p>
+						<button mat-button matStepperPrevious>Back</button>
+						<button mat-button (click)="stepper.reset()">Reset</button>
+					</p>
+				</div>
+				</mat-step>
+				</mat-horizontal-stepper>
+			</div>
+		</div>
+		<!-- 		</m-material-preview>
+	</div>
+</div> -->

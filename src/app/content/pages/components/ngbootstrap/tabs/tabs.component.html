@@ -1,0 +1,26 @@
+<div class="row" align="center">
+	<div class="col-xl-9">
+		<!-- <m-material-preview [viewItem]="exampleTabset"> -->
+			<div class="m-section">
+				<div class="m-section__content">
+					<ngb-tabset>
+						<ngb-tab title="Pharmacist">
+							<ng-template ngbTabContent>
+								<m-pharmacy-stepper></m-pharmacy-stepper>
+							</ng-template>
+						</ngb-tab>
+						<ngb-tab title="Pharmacy Owner">
+							<ng-template ngbTabContent>
+							</ng-template>
+						</ngb-tab>
+						<ngb-tab title="Disabled" [disabled]="true">
+							<ng-template ngbTabContent>
+								<p><m-modal></m-modal></p>
+							</ng-template>
+						</ngb-tab>
+					</ngb-tabset>
+				</div>
+			</div>
+		<!-- </m-material-preview> -->
+	</div>
+</div>
