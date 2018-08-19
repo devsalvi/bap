@@ -6,7 +6,6 @@ import { NgxPermissionsGuard } from 'ngx-permissions';
 import { ProfileComponent } from './header/profile/profile.component';
 import { ErrorPageComponent } from './snippets/error-page/error-page.component';
 import { TabsComponent } from './components/ngbootstrap/tabs/tabs.component';
-import { ModalComponent } from './components/ngbootstrap/modal/modal.component';
 
 const routes: Routes = [
 	{
@@ -68,10 +67,6 @@ const routes: Routes = [
 			{
 				path: 'tabs',
 				component: TabsComponent
-			},
-			{
-				path: 'modal',
-				component: ModalComponent
 			},
 		]
 	},

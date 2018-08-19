@@ -1618,14 +1618,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _header_profile_profile_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./header/profile/profile.component */ "./src/app/content/pages/header/profile/profile.component.ts");
 /* harmony import */ var _snippets_error_page_error_page_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./snippets/error-page/error-page.component */ "./src/app/content/pages/snippets/error-page/error-page.component.ts");
 /* harmony import */ var _components_ngbootstrap_tabs_tabs_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/ngbootstrap/tabs/tabs.component */ "./src/app/content/pages/components/ngbootstrap/tabs/tabs.component.ts");
-/* harmony import */ var _components_ngbootstrap_modal_modal_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/ngbootstrap/modal/modal.component */ "./src/app/content/pages/components/ngbootstrap/modal/modal.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
 
 
 
@@ -1694,10 +1692,6 @@ var routes = [
             {
                 path: 'tabs',
                 component: _components_ngbootstrap_tabs_tabs_component__WEBPACK_IMPORTED_MODULE_7__["TabsComponent"]
-            },
-            {
-                path: 'modal',
-                component: _components_ngbootstrap_modal_modal_component__WEBPACK_IMPORTED_MODULE_8__["ModalComponent"]
             },
         ]
     },
