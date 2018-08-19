@@ -89,7 +89,7 @@
 					<ng-template matStepLabel>Licensing Information</ng-template>
 					<p>
 						<mat-form-field class="example-form-field">
-						<input matInput type="text" placeholder="License Number" formControlName="licenseNumber" required/>
+						<input matInput type="text" placeholder="License Number" [(ngModel)]="licenseNumber" required/>
 						<button mat-button *ngIf="licenseNumber" matSuffix mat-icon-button aria-label="Clear" (click)="licenseNumber=''">
 						<mat-icon>close</mat-icon>
 						</button>

@@ -24,6 +24,9 @@ const stepperOverview =	{
 
 
 export class PharmacistStepperComponent implements OnInit {
+licenseNumber: any;
+isHuman: any;
+onChange: any;
 stateCtrl: FormControl;
       filteredStates: Observable<any[]>;
       states: State[] = [

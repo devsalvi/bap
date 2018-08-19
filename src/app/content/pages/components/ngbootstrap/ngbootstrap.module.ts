@@ -24,7 +24,6 @@ import { PaginationComponent } from './pagination/pagination.component';
 import { PopoverComponent } from './popover/popover.component';
 import { ProgressbarComponent } from './progressbar/progressbar.component';
 import { RatingComponent } from './rating/rating.component';
-import { TabsComponent } from './tabs/tabs.component';
 import { TimepickerComponent } from './timepicker/timepicker.component';
 import { TooltipComponent } from './tooltip/tooltip.component';
 import { TypeheadComponent } from './typehead/typehead.component';
@@ -89,10 +88,6 @@ const routes: Routes = [
 				component: RatingComponent
 			},
 			{
-				path: 'tabs',
-				component: TabsComponent
-			},
-			{
 				path: 'timepicker',
 				component: TimepickerComponent
 			},
@@ -143,7 +138,6 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
 		PopoverComponent,
 		ProgressbarComponent,
 		RatingComponent,
-		TabsComponent,
 		TimepickerComponent,
 		TooltipComponent,
 		TypeheadComponent

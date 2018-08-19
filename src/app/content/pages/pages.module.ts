@@ -15,7 +15,6 @@ import { ErrorPageComponent } from './snippets/error-page/error-page.component';
 import { TabsComponent } from './components/ngbootstrap/tabs/tabs.component';
 import { MaterialPreviewModule } from '../partials/content/general/material-preview/material-preivew.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { ModalComponent } from './components/ngbootstrap/modal/modal.component';
 import { PharmacistStepperComponent } from './components/material/layout/stepper/pharmacist.stepper.component';
 import {
 	MatAutocompleteModule,
@@ -73,7 +72,6 @@ import { MatDialogModule } from '@angular/material/dialog';
 		ProfileComponent,
 		ErrorPageComponent,
 		TabsComponent,
-		ModalComponent,
 		PharmacistStepperComponent
 	],
 	imports: [
