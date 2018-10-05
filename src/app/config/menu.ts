@@ -573,7 +573,7 @@ export class MenuConfig implements ConfigModel {
 										page: '/material/layout/tree'
 									}
 								]
-							// },
+							},
 							// {
 							// 	title: 'Buttons & Indicators',
 							// 	bullet: 'dot',
@@ -669,7 +669,7 @@ export class MenuConfig implements ConfigModel {
 							{
 								title: 'License',
 								page: '/ngbootstrap/alert'
-							// },
+							}
 							// {
 							// 	title: 'Buttons',
 							// 	page: '/ngbootstrap/buttons'
