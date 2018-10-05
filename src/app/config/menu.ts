@@ -456,23 +456,23 @@ export class MenuConfig implements ConfigModel {
 				self: {},
 				items: [
 					{
-						title: 'Dashboard',
-						desc: 'Some description goes here',
+						title: 'Notifications',
+						desc: 'You have unread notifications',
 						root: true,
 						icon: 'flaticon-line-graph',
 						page: '/',
 						badge: {type: 'm-badge--danger', value: '2'},
-						translate: 'MENU.DASHBOARD'
+						translate: 'MENU.NOTIFICATIONS'
 					},
-					{section: 'Components'},
+					{section: 'Pharmacist Control Panel'},
 					{
-						title: 'Google Material',
+						title: 'Scheduling',
 						root: true,
 						bullet: 'dot',
 						icon: 'flaticon-interface-7',
 						submenu: [
 							{
-								title: 'Form Controls',
+								title: 'Create New Schedule',
 								bullet: 'dot',
 								submenu: [
 									{
@@ -515,7 +515,7 @@ export class MenuConfig implements ConfigModel {
 								]
 							},
 							{
-								title: 'Navigation',
+								title: 'Update Existing Schedule',
 								bullet: 'dot',
 								submenu: [
 									{
@@ -533,7 +533,7 @@ export class MenuConfig implements ConfigModel {
 								]
 							},
 							{
-								title: 'Layout',
+								title: 'Delete Schedule',
 								bullet: 'dot',
 								submenu: [
 									{
@@ -573,202 +573,202 @@ export class MenuConfig implements ConfigModel {
 										page: '/material/layout/tree'
 									}
 								]
-							},
-							{
-								title: 'Buttons & Indicators',
-								bullet: 'dot',
-								submenu: [
-									{
-										title: 'Button',
-										page:
-											'/material/buttons-and-indicators/button'
-									},
-									{
-										title: 'Button toggle',
-										page:
-											'/material/buttons-and-indicators/button-toggle'
-									},
-									{
-										title: 'Chips',
-										page:
-											'/material/buttons-and-indicators/chips'
-									},
-									{
-										title: 'Icon',
-										page:
-											'/material/buttons-and-indicators/icon'
-									},
-									{
-										title: 'Progress bar',
-										page:
-											'/material/buttons-and-indicators/progress-bar'
-									},
-									{
-										title: 'Progress spinner',
-										page:
-											'/material/buttons-and-indicators/progress-spinner'
-									}
-								]
-							},
-							{
-								title: 'Popups & Modals',
-								bullet: 'dot',
-								submenu: [
-									{
-										title: 'Bottom sheet',
-										page:
-											'/material/popups-and-modals/bottom-sheet'
-									},
-									{
-										title: 'Dialog',
-										page:
-											'/material/popups-and-modals/dialog'
-									},
-									{
-										title: 'Snackbar',
-										page:
-											'/material/popups-and-modals/snackbar'
-									},
-									{
-										title: 'Tooltip',
-										page:
-											'/material/popups-and-modals/tooltip'
-									}
-								]
-							},
-							{
-								title: 'Data table',
-								bullet: 'dot',
-								submenu: [
-									{
-										title: 'Paginator',
-										page: '/material/data-table/paginator'
-									},
-									{
-										title: 'Sort header',
-										page: '/material/data-table/sort-header'
-									},
-									{
-										title: 'Table',
-										page: '/material/data-table/table'
-									}
-								]
-							}
+							// },
+							// {
+							// 	title: 'Buttons & Indicators',
+							// 	bullet: 'dot',
+							// 	submenu: [
+							// 		{
+							// 			title: 'Button',
+							// 			page:
+							// 				'/material/buttons-and-indicators/button'
+							// 		},
+							// 		{
+							// 			title: 'Button toggle',
+							// 			page:
+							// 				'/material/buttons-and-indicators/button-toggle'
+							// 		},
+							// 		{
+							// 			title: 'Chips',
+							// 			page:
+							// 				'/material/buttons-and-indicators/chips'
+							// 		},
+							// 		{
+							// 			title: 'Icon',
+							// 			page:
+							// 				'/material/buttons-and-indicators/icon'
+							// 		},
+							// 		{
+							// 			title: 'Progress bar',
+							// 			page:
+							// 				'/material/buttons-and-indicators/progress-bar'
+							// 		},
+							// 		{
+							// 			title: 'Progress spinner',
+							// 			page:
+							// 				'/material/buttons-and-indicators/progress-spinner'
+							// 		}
+							// 	]
+							// },
+							// {
+							// 	title: 'Popups & Modals',
+							// 	bullet: 'dot',
+							// 	submenu: [
+							// 		{
+							// 			title: 'Bottom sheet',
+							// 			page:
+							// 				'/material/popups-and-modals/bottom-sheet'
+							// 		},
+							// 		{
+							// 			title: 'Dialog',
+							// 			page:
+							// 				'/material/popups-and-modals/dialog'
+							// 		},
+							// 		{
+							// 			title: 'Snackbar',
+							// 			page:
+							// 				'/material/popups-and-modals/snackbar'
+							// 		},
+							// 		{
+							// 			title: 'Tooltip',
+							// 			page:
+							// 				'/material/popups-and-modals/tooltip'
+							// 		}
+							// 	]
+							// },
+							// {
+							// 	title: 'Data table',
+							// 	bullet: 'dot',
+							// 	submenu: [
+							// 		{
+							// 			title: 'Paginator',
+							// 			page: '/material/data-table/paginator'
+							// 		},
+							// 		{
+							// 			title: 'Sort header',
+							// 			page: '/material/data-table/sort-header'
+							// 		},
+							// 		{
+							// 			title: 'Table',
+							// 			page: '/material/data-table/table'
+							// 		}
+							// 	]
+							// }
 						]
 					},
 					{
-						title: 'Ng-Bootstrap',
+						title: 'Update Information',
 						root: true,
 						bullet: 'dot',
 						icon: 'flaticon-multimedia-1',
 						submenu: [
 							{
-								title: 'Accordion',
+								title: 'Personal Information',
 								page: '/ngbootstrap/accordion'
 							},
 							{
-								title: 'Alert',
+								title: 'License',
 								page: '/ngbootstrap/alert'
-							},
-							{
-								title: 'Buttons',
-								page: '/ngbootstrap/buttons'
-							},
-							{
-								title: 'Carousel',
-								page: '/ngbootstrap/carousel'
-							},
-							{
-								title: 'Collapse',
-								page: '/ngbootstrap/collapse'
-							},
-							{
-								title: 'Datepicker',
-								page: '/ngbootstrap/datepicker'
-							},
-							{
-								title: 'Dropdown',
-								page: '/ngbootstrap/dropdown'
-							},
-							{
-								title: 'Modal',
-								page: '/ngbootstrap/modal'
-							},
-							{
-								title: 'Pagination',
-								page: '/ngbootstrap/pagination'
-							},
-							{
-								title: 'Popover',
-								page: '/ngbootstrap/popover'
-							},
-							{
-								title: 'Progressbar',
-								page: '/ngbootstrap/progressbar'
-							},
-							{
-								title: 'Rating',
-								page: '/ngbootstrap/rating'
-							},
-							{
-								title: 'Tabs',
-								page: '/ngbootstrap/tabs'
-							},
-							{
-								title: 'Timepicker',
-								page: '/ngbootstrap/timepicker'
-							},
-							{
-								title: 'Tooltips',
-								page: '/ngbootstrap/tooltip'
-							},
-							{
-								title: 'Typehead',
-								page: '/ngbootstrap/typehead'
-							}
+							// },
+							// {
+							// 	title: 'Buttons',
+							// 	page: '/ngbootstrap/buttons'
+							// },
+							// {
+							// 	title: 'Carousel',
+							// 	page: '/ngbootstrap/carousel'
+							// },
+							// {
+							// 	title: 'Collapse',
+							// 	page: '/ngbootstrap/collapse'
+							// },
+							// {
+							// 	title: 'Datepicker',
+							// 	page: '/ngbootstrap/datepicker'
+							// },
+							// {
+							// 	title: 'Dropdown',
+							// 	page: '/ngbootstrap/dropdown'
+							// },
+							// {
+							// 	title: 'Modal',
+							// 	page: '/ngbootstrap/modal'
+							// },
+							// {
+							// 	title: 'Pagination',
+							// 	page: '/ngbootstrap/pagination'
+							// },
+							// {
+							// 	title: 'Popover',
+							// 	page: '/ngbootstrap/popover'
+							// },
+							// {
+							// 	title: 'Progressbar',
+							// 	page: '/ngbootstrap/progressbar'
+							// },
+							// {
+							// 	title: 'Rating',
+							// 	page: '/ngbootstrap/rating'
+							// },
+							// {
+							// 	title: 'Tabs',
+							// 	page: '/ngbootstrap/tabs'
+							// },
+							// {
+							// 	title: 'Timepicker',
+							// 	page: '/ngbootstrap/timepicker'
+							// },
+							// {
+							// 	title: 'Tooltips',
+							// 	page: '/ngbootstrap/tooltip'
+							// },
+							// {
+							// 	title: 'Typehead',
+							// 	page: '/ngbootstrap/typehead'
+							// }
 						]
 					},
 					{
-						title: 'Metronic',
+						title: 'Certifications',
 						root: true,
 						bullet: 'dot',
 						icon: 'flaticon-interface-8',
 						submenu: [
 							{
-								title: 'Accordion',
+								title: 'Add New Certification',
 								page: '/metronic/accordion'
 							},
 							{
-								title: 'Sticky Form Actions',
+								title: 'Update Exisitng Certification',
 								page: '/metronic/sticky-form-actions'
 							},
 							{
-								title: 'Forms',
+								title: 'Delete Certification',
 								page: '/metronic/forms'
 							}
 						]
 					},
-					{section: 'Applications'},
-					{
-						title: 'eCommerce',
-						bullet: 'dot',
-						icon: 'flaticon-business',
-						root: true,
-						submenu: [
-							{
-								title: 'Customers',
-								page: '/ecommerce/customers'
-							},
-							{
-								title: 'Orders',
-								page: '/ecommerce/orders'
-							},
-							{
-								title: 'Products',
-								page: '/ecommerce/products'
-							},
-						]
-					},
+					// {section: 'Applications'},
+					// {
+					// 	title: 'eCommerce',
+					// 	bullet: 'dot',
+					// 	icon: 'flaticon-business',
+					// 	root: true,
+					// 	submenu: [
+					// 		{
+					// 			title: 'Customers',
+					// 			page: '/ecommerce/customers'
+					// 		},
+					// 		{
+					// 			title: 'Orders',
+					// 			page: '/ecommerce/orders'
+					// 		},
+					// 		{
+					// 			title: 'Products',
+					// 			page: '/ecommerce/products'
+					// 		},
+					// 	]
+					// },
 					// {
 					// 	title: 'User Management',
 					// 	root: true,
@@ -783,58 +783,58 @@ export class MenuConfig implements ConfigModel {
 					// 	icon: 'flaticon-interface-5',
 					// 	page: '/audit-log'
 					// },
-					{section: 'Pages'},
-					{
-						title: 'User',
-						root: true,
-						bullet: 'dot',
-						icon: 'flaticon-interface-1',
-						submenu: [
-							{
-								title: 'Profile',
-								page: '/profile'
-							},
-						]
-					},
-					{
-						title: 'Error',
-						root: true,
-						bullet: 'dot',
-						icon: 'flaticon-interface-2',
-						submenu: [
-							{
-								title: 'Error-1',
-								page: '/error/1'
-							},
-							{
-								title: 'Error-2',
-								page: '/error/2'
-							},
-							{
-								title: 'Error-3',
-								page: '/error/3'
-							},
-							{
-								title: 'Error-4',
-								page: '/error/4'
-							},
-							{
-								title: 'Error-5',
-								page: '/error/5'
-							},
-							{
-								title: 'Error-6',
-								page: '/error/6'
-							},
-						]
-					},
-					{section: 'Tools'},
-					{
-						title: 'Layout Builder',
-						root: true,
-						icon: 'flaticon-settings',
-						page: '/builder'
-					}
+					// {section: 'Pages'},
+					// {
+					// 	title: 'User',
+					// 	root: true,
+					// 	bullet: 'dot',
+					// 	icon: 'flaticon-interface-1',
+					// 	submenu: [
+					// 		{
+					// 			title: 'Profile',
+					// 			page: '/profile'
+					// 		},
+					// 	]
+					// },
+					// {
+					// 	title: 'Error',
+					// 	root: true,
+					// 	bullet: 'dot',
+					// 	icon: 'flaticon-interface-2',
+					// 	submenu: [
+					// 		{
+					// 			title: 'Error-1',
+					// 			page: '/error/1'
+					// 		},
+					// 		{
+					// 			title: 'Error-2',
+					// 			page: '/error/2'
+					// 		},
+					// 		{
+					// 			title: 'Error-3',
+					// 			page: '/error/3'
+					// 		},
+					// 		{
+					// 			title: 'Error-4',
+					// 			page: '/error/4'
+					// 		},
+					// 		{
+					// 			title: 'Error-5',
+					// 			page: '/error/5'
+					// 		},
+					// 		{
+					// 			title: 'Error-6',
+					// 			page: '/error/6'
+					// 		},
+					// 	]
+					// },
+					// {section: 'Tools'},
+					// {
+					// 	title: 'Layout Builder',
+					// 	root: true,
+					// 	icon: 'flaticon-settings',
+					// 	page: '/builder'
+					// }
 				]
 			}
 		};

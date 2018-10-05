@@ -11,7 +11,8 @@ export const locale = {
 			CREATE_POST: '创建新帖子',
 			REPORTS: '报告',
 			APPS: '应用',
-			DASHBOARD: '仪表板'
+			DASHBOARD: '仪表板',
+			NOTIFICATIONS: 'Notifications'
 		},
 		AUTH: {
 			GENERAL: {

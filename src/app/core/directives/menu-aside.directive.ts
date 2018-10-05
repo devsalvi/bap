@@ -69,8 +69,24 @@ export class MenuAsideDirective implements AfterViewInit, OnDestroy {
 						mode: 'dropdown'
 					}
 				},
-				tablet: 'accordion', // menu set to accordion in tablet mode
-				mobile: 'accordion' // menu set to accordion in mobile mode
+				tablet: {
+					// by default the menu mode set to accordion in desktop mode
+					default: menuDesktopMode,
+					// whenever body has this class switch the menu mode to dropdown
+					state: {
+						body: 'm-aside-left--minimize',
+						mode: 'dropdown'
+					}
+				}, // menu set to accordion in tablet mode
+				mobile: {
+					// by default the menu mode set to accordion in desktop mode
+					default: menuDesktopMode,
+					// whenever body has this class switch the menu mode to dropdown
+					state: {
+						body: 'm-aside-left--minimize',
+						mode: 'dropdown'
+					}
+				}//'accordion' // menu set to accordion in mobile mode
 			},
 			// accordion setup
 			accordion: {

@@ -11,7 +11,8 @@ export const locale = {
 			CREATE_POST: '新しい投稿を作成',
 			REPORTS: 'レポート',
 			APPS: 'アプリ',
-			DASHBOARD: 'ダッシュボード'
+			DASHBOARD: 'ダッシュボード',
+			NOTIFICATIONS: 'Notifications'
 		},
 		AUTH: {
 			GENERAL: {

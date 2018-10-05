@@ -11,7 +11,8 @@ export const locale = {
 			CREATE_POST: 'Erstellen Sie einen neuen Beitrag',
 			REPORTS: 'Berichte',
 			APPS: 'Apps',
-			DASHBOARD: 'Instrumententafel'
+			DASHBOARD: 'Instrumententafel',
+			NOTIFICATIONS: 'Notifications'
 		},
 		AUTH: {
 			GENERAL: {

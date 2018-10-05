@@ -12,6 +12,7 @@ export const locale = {
 			REPORTS: 'Rappots',
 			APPS: 'Applications',
 			DASHBOARD: 'Tableau de Bord',
+			NOTIFICATIONS: 'Notifications'
 		},
 		AUTH: {
 			GENERAL: {

@@ -3,12 +3,14 @@
 	<m-header></m-header>
 
 	<!-- begin::Body -->
-	<div class="m-grid__item m-grid__item--fluid m-grid m-grid--ver-desktop m-grid--desktop m-body" [ngClass]="pageBodyClass$ | async">
+	<!-- m-grid--ver-desktop m-grid--desktop -->
+	<div class="m-grid__item m-grid__item--fluid m-grid  m-body" [ngClass]="pageBodyClass$ | async">
 		<!-- BEGIN:: Aside Left -->
-<!-- 		<button class="m-aside-left-close" id="m_aside_left_close_btn" [ngClass]="asideLeftCloseClass | mJoin">
+		<m-aside-left></m-aside-left>
+		<!-- <button class="m-aside-left-close" id="m_aside_left_close_btn" [ngClass]="asideLeftCloseClass | mJoin">
 			<i class="la la-close"></i>
-		</button> -->
-		<!-- <ng-container *ngIf="asideLeftDisplay">
+		</button>
+		<ng-container *ngIf="asideLeftDisplay">
 			<m-aside-left></m-aside-left>
 		</ng-container> -->
 		<!-- END:: Aside Left -->

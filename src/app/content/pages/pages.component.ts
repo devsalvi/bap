@@ -61,9 +61,9 @@ export class PagesComponent implements OnInit, AfterViewInit {
 			this.asideRightDisplay = objectPath.get(config, 'aside.right.display');
 		});
 
-		this.classInitService.onClassesUpdated$.subscribe((classes) => {
-			this.asideLeftCloseClass = objectPath.get(classes, 'aside_left_close');
-		});
+		// this.classInitService.onClassesUpdated$.subscribe((classes) => {
+		// 	this.asideLeftCloseClass = objectPath.get(classes, 'aside_left_close');
+		// });
 
 		// animate page load
 		this.router.events.subscribe(event => {
